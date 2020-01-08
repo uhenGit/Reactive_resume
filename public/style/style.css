@@ -1,3 +1,10 @@
+:root {
+    --header-bg-color:#52DE97;
+    --nav-bg-color:#C0FFB3;
+    --main-bg-color:#FFBA5A;
+    --footer-bg-color:#2C7873;
+}
+
 *,
 ::before,
 ::after {
@@ -9,12 +16,16 @@
     display: flex;
 }
 
-/* HEADER */
+/* HEADER COMPONENT*/
 header {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    background-color: rgb(170, 185, 200);
-    padding-bottom: 10px;
+    background-color: var(--header-bg-color);
+    padding-bottom: 10px;    
+}
+.wrap {
+    max-width: 80%;
+    margin: 0 auto;    
 }
 
 .triangle {
@@ -22,19 +33,18 @@ header {
     height: 0;
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;
-    border-top: 60px solid black;
+    border-top: 60px solid rgb(0, 0, 0);
     margin: 0 auto 20px;
 }
 
-header h3 {
-    margin: 15px 0 30px 0;
+header h1, h2, header h3 {
+    margin: 0 0 30px 0;
 }
 
 .contactMe {
     border: 2px solid rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     margin: 10px auto;
-    width: 75%;
     align-items: center;
     position: relative;
     -webkit-box-shadow: 3px 4px 5px -2px rgba(0, 0, 0, 0.75);
@@ -50,7 +60,7 @@ header h3 {
     position: absolute;
     padding: 5px;
     top: -25px;
-    background-color: rgb(170, 185, 200);
+    background-color: var(--header-bg-color);
 }
 
 .mailIcon::before,
@@ -83,4 +93,72 @@ header h3 {
 
 .locationIcon img {
     left: 80%;
+}
+
+/* NAV COMPONENT*/
+nav {
+    background-color: var(--nav-bg-color);
+}
+nav ul {
+    justify-content: space-around;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    transition-duration: 500ms;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+}
+.disabledLink {
+    pointer-events: none;
+}
+
+/* MAIN COMPONENT */
+main {
+    background-color: var(--main-bg-color);
+}
+
+.about {
+    text-align: center;
+    padding: 20px 0;
+}
+.about section {
+    padding: 2% 0 2% 5%;
+    align-items: center;
+}
+.about section img {
+    width: 100px;
+    height: 120px;
+    border-radius: 3px 3px 3px 20px;
+}
+.about section article {
+    line-height: 35px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* FOOTER COMPONENT */
+footer {
+    background-color: var(--footer-bg-color);
+}
+.lastBlock {
+    justify-content: space-between;
+    padding: 20px;
+}
+.lastBlock button {
+    background-color: var(--footer-bg-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }

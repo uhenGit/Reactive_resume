@@ -59,55 +59,64 @@ const ResumeAPI = {
     },
     resume: {
       education: [{
-          school: 'University of Life',
-          degree: 'Master in Graphic Design',
-          graduated: 'April 2007',
+          school: 'IT School Level UP',
+          degree: 'Junior Web Developer',
+          graduated: 'October 2018',
           description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.'
         },
         {
-          school: 'School of Cool Designers',
-          degree: 'B.A. Degree in Graphic Design',
-          graduated: 'March 2003',
+          school: 'National Metallurgical Academy of Ukraine',
+          degree: 'Bachelor of Economics',
+          graduated: 'June 2005',
           description: 'This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat'
         }
       ],
       work: [{
-          company: 'Awesome Design Studio',
-          title: 'Senior UX Designer ',
-          years: 'March 2010 - Present',
+          company: 'Freelancer',
+          title: 'Web Developer ',
+          years: 'March 2018 - Present',
           description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.'
         },
         {
-          company: 'Super Cool Studio',
-          title: 'UX Designer',
-          years: 'March 2007 - February 2010',
+          company: 'Self Employed',
+          title: 'Self Employed',
+          years: 'March 2009 - February 2018',
           description: 'This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat'
         }
       ],
-      skills: [{
-          name: 'Photoshop',
-          level: '60%'
-        },
+      skills: [
         {
-          name: 'Illustrator',
-          level: '55%'
-        },
-        {
-          name: 'Wordpress',
-          level: '50%'
+          name: 'HTML5',
+          level: '90%'
         },
         {
           name: 'CSS',
           level: '90%'
         },
         {
-          name: 'HTML5',
-          level: '80%'
+          name: 'JavaScript',
+          level: '70%'
         },
         {
           name: 'jQuery',
+          level: '65%'
+        },
+        {
+          name: 'Node JS',
           level: '50%'
-        }
+        },
+        {
+          name: 'React JS',
+          level: '50%'
+        },
+        {
+          name: 'Wordpress',
+          level: '50%'
+        },
+        {
+          name: 'Photoshop',
+          level: '30%'
+        },
       ]
     },
     portfolio: {
