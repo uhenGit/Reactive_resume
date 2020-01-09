@@ -20,41 +20,39 @@ const ResumeAPI = {
       },
       website: 'https://megaweb.jacksparrow.com',
       resumeDownload: 'http://something.com',
-      social: [{
-          name: 'facebook',
-          url: 'http://facebook.com',
-          className: 'fa fa-facebook'
+      skills: [
+        {
+          name: 'HTML5',
+          level: '90'
         },
         {
-          name: 'twitter',
-          url: 'http://twitter.com',
-          className: 'fa fa-twitter'
+          name: 'CSS',
+          level: '90'
         },
         {
-          name: 'google-plus',
-          url: 'http://googleplus.com',
-          className: 'fa fa-google-plus'
+          name: 'JavaScript',
+          level: '70'
         },
         {
-          name: 'linkedin',
-          url: 'http://linkedin.com',
-          className: 'fa fa-linkedin'
+          name: 'jQuery',
+          level: '65'
         },
         {
-          name: 'instagram',
-          url: 'http://instagram.com',
-          className: 'fa fa-instagram'
+          name: 'Node JS',
+          level: '50'
         },
         {
-          name: 'github',
-          url: 'http://github.com',
-          className: 'fa fa-github'
+          name: 'React JS',
+          level: '50'
         },
         {
-          name: 'skype',
-          url: 'http://skype.com',
-          className: 'fa fa-skype'
-        }
+          name: 'Wordpress',
+          level: '50'
+        },
+        {
+          name: 'Photoshop',
+          level: '30'
+        },
       ]
     },
     resume: {
@@ -84,41 +82,44 @@ const ResumeAPI = {
           description: 'This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat'
         }
       ],
-      skills: [
-        {
-          name: 'HTML5',
-          level: '90%'
-        },
-        {
-          name: 'CSS',
-          level: '90%'
-        },
-        {
-          name: 'JavaScript',
-          level: '70%'
-        },
-        {
-          name: 'jQuery',
-          level: '65%'
-        },
-        {
-          name: 'Node JS',
-          level: '50%'
-        },
-        {
-          name: 'React JS',
-          level: '50%'
-        },
-        {
-          name: 'Wordpress',
-          level: '50%'
-        },
-        {
-          name: 'Photoshop',
-          level: '30%'
-        },
-      ]
-    },
+      social: [{
+        name: 'facebook',
+        url: 'http://facebook.com',
+        className: 'fa fa-facebook'
+      },
+      {
+        name: 'twitter',
+        url: 'http://twitter.com',
+        className: 'fa fa-twitter'
+      },
+      {
+        name: 'google-plus',
+        url: 'http://googleplus.com',
+        className: 'fa fa-google-plus'
+      },
+      {
+        name: 'linkedin',
+        url: 'http://linkedin.com',
+        className: 'fa fa-linkedin'
+      },
+      {
+        name: 'instagram',
+        url: 'http://instagram.com',
+        className: 'fa fa-instagram'
+      },
+      {
+        name: 'github',
+        url: 'http://github.com',
+        className: 'fa fa-github'
+      },
+      {
+        name: 'skype',
+        url: 'http://skype.com',
+        className: 'fa fa-skype'
+      }
+    ]
+  },
+      
     portfolio: {
       projects: [{
           title: 'Coffee Cup',

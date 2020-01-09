@@ -24,3 +24,7 @@ yarn-error.log*
 
 #template
 /public/preview_resume.jpg
+
+#map api components
+/public/sdk
+/src/key.js
