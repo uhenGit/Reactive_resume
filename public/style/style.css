@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "Muli";
-  src: url("../fonts/muli/Muli.ttf") format("ttf");
+  font-family: "muliregular";
+  src: url("../fonts/muli/muli-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 :root {
   --nav-bg-color: #e3e4b6;
@@ -161,7 +163,7 @@ main {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
   padding: 20px 0;
-  font-family: "Muli", Arial, Helvetica, sans-serif;
+  font-family: "muliregular", Arial, Helvetica, sans-serif;
 }
 
 .about section {
