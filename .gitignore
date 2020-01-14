@@ -28,3 +28,4 @@ yarn-error.log*
 #map api components
 /public/sdk
 /src/key.js
+/src/components/Map.jsx

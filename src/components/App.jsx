@@ -1,27 +1,26 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 
-import Header from './Header';
-import Navigation from './Navigation';
-import Main from './Main';
-import Map from './Map';
-import Footer from './Footer';
-import resumeAPI from '../resumeData'
-
+import Header from "./Header";
+import Navigation from "./Navigation";
+import Main from "./Main";
+import Form from "./Form";
+import Footer from "./Footer";
+import resumeAPI from "../resumeData";
 
 const App = () => {
-    const [toggleMap, setToggleMap] = useState(false);
-    const data = resumeAPI.getAll();
-    const changeToggle = () => setToggleMap(!toggleMap);
-    return (
-        <div>
-            <Header data={data.main} />
-            <Navigation />
-            <button onClick={changeToggle}>Show map</button>
-            {toggleMap?<Map/>:null}
-            <Main data={data}/>
-            <Footer data={data.main}/>
-        </div>
-    )
-}
+  const data = resumeAPI.getAll();
+  const [toggleForm, setToggleForm] = useState(false);
 
-export default App
+  const changeToggle = () => setToggleForm(!toggleForm);
+  return (
+    <div>
+      <Header data={data.main} toggleForm={changeToggle} />
+      <Navigation />
+      {toggleForm ? <Form toggleForm={changeToggle} /> : null}
+      <Main data={data} />
+      <Footer data={data.main} toggleForm={changeToggle} />
+    </div>
+  );
+};
+
+export default App;
