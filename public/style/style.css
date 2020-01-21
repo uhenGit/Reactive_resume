@@ -4,6 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 :root {
   --nav-bg-color: #e3e4b6;
   --main-bg-color: #ffffff;
@@ -24,6 +25,7 @@ h4,
 h5 {
   margin: 0 0 30px 0;
 }
+
 .flex {
   display: flex;
 }
@@ -35,12 +37,14 @@ header {
   background-image: url(../img/macheader-sm.jpg);
   background-position: bottom;
 }
+
 .shadow {
   width: 100%;
   height: 100%;
   background-color: rgba(10, 10, 22, 0.4);
   padding-bottom: 10px;
 }
+
 .wrap {
   max-width: 80%;
   margin: 0 auto;
@@ -67,6 +71,7 @@ header {
   -moz-box-shadow: 3px 4px 5px -2px rgba(255, 255, 255, 0.75);
   box-shadow: 3px 4px 5px -2px rgba(255, 255, 255, 0.75);
 }
+
 .contactMe::before {
   content: "";
   display: block;
@@ -74,6 +79,7 @@ header {
   width: 1px;
   box-shadow: -3px 0 3px rgb(255, 255, 255);
 }
+
 .contactMe div {
   flex: 1;
 }
@@ -84,11 +90,13 @@ header {
   top: -25px;
   background-color: var(--header-bg-color);
 }
+
 .mailIcon,
 .phoneIcon,
 .locationIcon {
   cursor: pointer;
 }
+
 .mailIcon::before,
 .mailIcon::after {
   content: "";
@@ -125,15 +133,18 @@ header {
 nav {
   background-color: var(--nav-bg-color);
 }
+
 nav ul {
   justify-content: space-around;
   max-width: 75%;
   margin: 0 auto;
   padding: 20px 0;
 }
+
 nav ul li {
   list-style: none;
 }
+
 nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -143,12 +154,14 @@ nav ul li a {
   border-radius: 5px;
   border: 1px solid rgb(0, 0, 0);
 }
+
 nav ul li a:hover {
   background-color: rgb(255, 255, 255);
   -webkit-box-shadow: inset -1px 1px 5px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset -1px 1px 5px 1px rgba(0, 0, 0, 0.5);
   box-shadow: inset -1px 1px 5px 1px rgba(0, 0, 0, 0.5);
 }
+
 .disabledLink {
   pointer-events: none;
   outline: none;
@@ -172,40 +185,49 @@ main {
   border-radius: 5px;
   padding: 2% 0;
 }
+
 .about .flex img {
   margin-right: 3%;
   margin-left: 3%;
 }
 
 .about img {
-  max-width: 100%;
+  margin-right: 3%;
+  margin-left: 3%;
+  width: 100px;
   height: 50%;
   flex: 0 0 33.3333%;
   padding-top: 52px;
 }
+
 .about section article {
   line-height: 35px;
   max-width: 80%;
   margin: 0 auto;
 }
+
 .skills {
   margin-right: 0;
   -webkit-box-shadow: inset 0px -5px 6px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px -5px 6px -3px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px -5px 6px -3px rgba(0, 0, 0, 0.75);
 }
+
 .skillist {
   max-height: 400px;
   overflow: hidden;
   transition: max-height 0.25s ease-out;
 }
+
 .progress-bar {
   margin: 0 auto;
 }
+
 .skill {
   margin: 5px 10px 0 25px;
   flex: 1 1 25%;
 }
+
 section button {
   background: transparent;
   border: none;
@@ -213,6 +235,7 @@ section button {
   cursor: pointer;
   outline: none;
 }
+
 section button::after {
   content: "";
   background-image: url(../img/arrow.png);
@@ -221,18 +244,22 @@ section button::after {
   display: block;
   height: 35px;
 }
+
 .active {
   max-height: 800px;
   transition: max-height 0.25s ease-in;
 }
+
 /* FOOTER COMPONENT */
 footer {
   background-color: var(--footer-bg-color);
 }
+
 .lastBlock {
   justify-content: space-between;
   padding: 20px;
 }
+
 .lastBlock button {
   background-color: var(--footer-bg-color);
   border: none;
@@ -265,32 +292,61 @@ footer {
   border-radius: 20px;
   /* background-color: rgb(255, 255, 255); */
 }
+
 .inner form {
   width: 100%;
   height: 100%;
   background-color: rgb(230, 218, 213);
+  position: relative;
+
 }
+
+.inner>* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .labelWrap {
   flex-direction: column;
   width: 50%;
+  height: 100%;
   margin: 0 auto;
+  justify-content: center;
 }
-.labelWrap > * {
+
+.labelWrap>* {
   padding: 10px;
 }
+
+textarea {
+  resize: none;
+}
+
+.btns {
+  justify-content: space-around;
+}
+
 input[type="submit"] {
-  position: absolute;
-  bottom: 10%;
-  left: 25%;
+  width: 30%;
   padding: 8px;
   border-radius: 15px;
   background-color: #2c7873;
-}
-.close {
-  position: absolute;
-  left: 95%;
-  top: 4%;
   cursor: pointer;
-  background: transparent;
-  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.close {
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #cccccc;
+  padding: 8px;
+  border-radius: 15px;
+  background-color: #ff0000;
+  color: #ffffff;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
