@@ -9,7 +9,7 @@ const ResumeAPI = {
       email: "uhen.dn@gmail.com",
       phone: "+38-096-557-558-7",
       address: {
-        street: "D. Galitskoho st. 9",
+        street: "D. Galitskoho street",
         city: "Dnipro",
         zip: "49102"
       },
