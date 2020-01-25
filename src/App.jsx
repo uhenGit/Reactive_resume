@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-import "./style.css";
+import "./components/style.css";
 
-import Header from "./Header";
-import Navigation from "./Navigation";
-import Main from "./Main";
-import Form from "./Form";
-import Footer from "./Footer";
-import resumeAPI from "../resumeData";
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import Main from "./components/Main";
+import Form from "./components/Form";
+import Footer from "./components/Footer";
+import resumeAPI from "./resumeData";
 
 const App = () => {
   const data = resumeAPI.getAll();
