@@ -3,15 +3,13 @@ const ResumeAPI = {
     main: {
       name: "Eugene Nagornyi",
       occupation: "Web developer",
-      description:
-        "I create websites and web applications of all types. I also teach web dev courses",
+      description: "I create websites and web applications of all types",
       image: "profilepic.jpg",
-      bio:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      bio: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
       email: "uhen.dn@gmail.com",
       phone: "+38-096-557-558-7",
       address: {
-        street: "D. Galitskoho st. 9",
+        street: "D. Galitskoho street",
         city: "Dnipro",
         zip: "49102"
       },
@@ -22,8 +20,7 @@ const ResumeAPI = {
       },
       website: "https://megaweb.jacksparrow.com",
       resumeDownload: "http://something.com",
-      skills: [
-        {
+      skills: [{
           name: "HTML5",
           level: "90"
         },
@@ -58,40 +55,33 @@ const ResumeAPI = {
       ]
     },
     resume: {
-      education: [
-        {
+      education: [{
           school: "IT School Level UP",
           degree: "Junior Web Developer",
           graduated: "October 2018",
-          description:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium."
+          description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium."
         },
         {
           school: "National Metallurgical Academy of Ukraine",
           degree: "Bachelor of Economics",
           graduated: "June 2005",
-          description:
-            "This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat"
+          description: "This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat"
         }
       ],
-      work: [
-        {
+      work: [{
           company: "Freelancer",
           title: "Web Developer ",
           years: "March 2018 - Present",
-          description:
-            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium."
+          description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium."
         },
         {
           company: "Self Employed",
           title: "Self Employed",
           years: "March 2009 - February 2018",
-          description:
-            "This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat"
+          description: "This is Photoshops version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat"
         }
       ],
-      social: [
-        {
+      social: [{
           name: "facebook",
           url: "http://facebook.com",
           className: "fa fa-facebook"
@@ -127,108 +117,9 @@ const ResumeAPI = {
           className: "fa fa-skype"
         }
       ]
-    },
-
-    portfolio: {
-      projects: [
-        {
-          title: "Coffee Cup",
-          description:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          category: "Illustrator",
-          tags: "Branding, Web Design",
-          image: "coffee.jpg",
-          url: "http://port1.com",
-          modal: "#modal-01"
-        },
-        {
-          title: "Console",
-          description:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          category: "Web Design",
-          tags: "Branding, Web Development",
-          image: "console.jpg",
-          url: "http://port2.com",
-          modal: "#modal-02"
-        },
-        {
-          title: "Judah",
-          description:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          category: "Web Development",
-          tags: "Branding, Web Programming",
-          image: "judah.jpg",
-          url: "http://port3.com",
-          modal: "#modal-03"
-        },
-        {
-          title: "Into The Light",
-          description:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          category: "Photography",
-          tags: "Photography, Design",
-          image: "intothelight.jpg",
-          url: "http://port4.com",
-          modal: "#modal-04"
-        },
-        {
-          title: "Farmer Boy",
-          description:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          category: "Branding",
-          tags: "Branding, Web Design",
-          image: "farmerboy.jpg",
-          url: "http://port5.com",
-          modal: "#modal-05"
-        },
-        {
-          title: "Girl",
-          description:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          category: "Photography",
-          tags: "Photography, Graphic Design",
-          image: "girl.jpg",
-          url: "http://port6.com",
-          modal: "#modal-06"
-        },
-        {
-          title: "Origami",
-          description:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          category: "Illustration",
-          tags: "Branding, Illustration",
-          image: "origami.jpg",
-          url: "http://port7.com",
-          modal: "#modal-07"
-        },
-        {
-          title: "Retrocam",
-          description:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          category: "Web Development",
-          tags: "Photography",
-          image: "retrocam.jpg",
-          url: "http://port8.com",
-          modal: "#modal-08"
-        }
-      ]
-    },
-    testimonials: {
-      testimonials: [
-        {
-          text:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          user: "John Doe"
-        },
-        {
-          text:
-            "Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.",
-          user: "Steve Smith"
-        }
-      ]
     }
   },
-  getAll: function() {
+  getAll: function () {
     return this.allData;
   }
 };

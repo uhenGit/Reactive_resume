@@ -23,10 +23,9 @@ const Form = ({ toggleForm }) => {
   return (
     <div className="popup" onClick={toggleForm}>
       <div className="inner" onClick={e => e.stopPropagation()}>
-        <button className="close" onClick={toggleForm}>
-          close
-        </button>
+
         <form onSubmit={submitForm}>
+
           <div className="labelWrap flex">
             <label htmlFor="name">Your Name</label>
             <input
@@ -54,8 +53,12 @@ const Form = ({ toggleForm }) => {
               onChange={changeText}
               value={inputText}
             ></textarea>
+            <div className="btns flex">
+              <input type="submit" value="Submit" />
+              <span className="close" onClick={toggleForm}>Close</span>
+            </div>
           </div>
-          <input type="submit" value="Submit" />
+
         </form>
       </div>
     </div>
